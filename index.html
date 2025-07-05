@@ -1,4 +1,688 @@
-<!DOCTYPE html>
+<div class="financial-impact">
+                <h2>💰 Costo Finanziario Disequilibrio Famiglia-Lavoro</h2>
+                
+                <div class="cost-grid">
+                    <div class="cost-item">
+                        <div class="cost-value">€15.000</div>
+                        <div class="cost-label">Perdita Deal per Decisioni<br>sotto Stress Familiare</div>
+                    </div>
+                    <div class="cost-item">
+                        <div class="cost-value">€18.000</div>
+                        <div class="cost-label">Calo Produttività Team<br>Leadership Compromessa</div>
+                    </div>
+                    <div class="cost-item">
+                        <div class="cost-value">€8.000</div>
+                        <div class="cost-label">Giorni Malattia Stress<br>+ Burnout Prevention</div>
+                    </div>
+                    <div class="cost-item">
+                        <div class="cost-value">€4.000</div>
+                        <div class="cost-label">Opportunità Mancate<br>Focus Ridotto</div>
+                    </div>
+                    <div class="cost-item">
+                        <div class="cost-value">€45.000</div>
+                        <div class="cost-label"><strong>TOTALE ANNUALE</strong><br>Costo Disequilibrio</div>
+                    </div>
+                    <div class="cost-item">
+                        <div class="cost-value">€95.000</div>
+                        <div class="cost-label"><strong>UPSIDE POTENTIAL</strong><br>Con Equilibrio Ottimale</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">25</div>
+                    <div class="metric-label">Lead Score Complessivo</div>
+                    <div class="metric-trend">
+                        <span class="risk-indicator risk-medium">Segmento D - Alto Potenziale</span>
+                        <span class="trend-positive">↗️ Correlation Index: 4.2/10</span>
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">€7.5K</div>
+                    <div class="metric-label">Investimento Famiglia-Business</div>
+                    <div class="metric-trend trend-positive">
+                        ✅ Budget confermato (€5K-€10K range)
+                        <br>📈 ROI atteso: 12.6x in 12 mesi
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">100%</div>
+                    <div class="metric-label">Conversion Probability</div>
+                    <div class="metric-trend trend-positive">
+                        🎯 Commitment Level: 5/5 (Massimo)
+                        <br>🚀 Obiettivo: Equilibrio famiglia-lavoro
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">4.2/10</div>
+                    <div class="metric-label">Famiglia-Business Correlation</div>
+                    <div class="metric-trend">
+                        <span class="risk-indicator risk-high">Impatto Significativo Business</span>
+                        <span class="trend-negative">📊 Target: 8.5/10</span>
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">8/10</div>
+                    <div class="metric-label">Stress Level Critico</div>
+                    <div class="metric-trend">
+                        <span class="risk-indicator risk-high">Transfer 75% Casa→Lavoro</span>
+                        <span class="trend-negative">⚠️ Recovery: 3 giorni post-conflitto</span>
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">3/10</div>
+                    <div class="metric-label">Soddisfazione Familiare</div>
+                    <div class="metric-trend">
+                        <span class="risk-indicator risk-high">Situazione Critica</span>
+                        <span class="trend-negative">👨‍👦 Solo 0-1 cene/settimana figlio</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="benchmark-section">
+                <h2>🎯 Benchmark Analysis vs Manager Equilibrati</h2>
+                <div class="benchmark-grid">
+                    <div class="benchmark-item">
+                        <div class="benchmark-value">30°</div>
+                        <div class="benchmark-label">Percentile Attuale<br>Work-Life Balance</div>
+                    </div>
+                    <div class="benchmark-item">
+                        <div class="benchmark-value">75°</div>
+                        <div class="benchmark-label">Target Percentile<br>Post-Intervento</div>
+                    </div>
+                    <div class="benchmark-item">
+                        <div class="benchmark-value">45pt</div>
+                        <div class="benchmark-label">Gap Miglioramento<br>vs Manager Top</div>
+                    </div>
+                    <div class="benchmark-item">
+                        <div class="benchmark-value">€95K</div>
+                        <div class="benchmark-label">Value Creation<br>Potential Annuale</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="charts-section">
+                <div class="chart-container">
+                    <div class="chart-title">📊 Correlazione Famiglia-Business</div>
+                    <div class="chart-wrapper">
+                        <canvas id="familyBusinessChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <div class="chart-title">🎯 Radar Equilibrio Vita-Lavoro</div>
+                    <div class="chart-wrapper">
+                        <canvas id="workLifeRadarChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <div class="chart-title">📈 ROI Timeline 6 Mesi</div>
+                    <div class="chart-wrapper">
+                        <canvas id="roiTimelineChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-section">
+                <h2>⏱️ Timeline Implementazione Strategica Famiglia-Business</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-phase">FASE 1: Stabilizzazione (0-2 mesi)</div>
+                        <div class="timeline-description">
+                            <strong>Obiettivo:</strong> Ridurre transfer stress famiglia-lavoro<br>
+                            • Protocolli separazione emotiva casa-ufficio<br>
+                            • Tecniche recovery post-conflitto<br>
+                            • Quality time strutturato con figlio<br>
+                            • Metriche: Stress transfer 75%→40%, Recovery 3→1 giorni
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-phase">FASE 2: Ottimizzazione (2-4 mesi)</div>
+                        <div class="timeline-description">
+                            <strong>Obiettivo:</strong> Costruire equilibrio sostenibile<br>
+                            • Energy management famiglia-lavoro<br>
+                            • Leadership style enhancement<br>
+                            • Supporto familiare decision making<br>
+                            • Metriche: Soddisfazione famiglia 3→6, Energy 4→7
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-phase">FASE 3: Eccellenza (4-6 mesi)</div>
+                        <div class="timeline-description">
+                            <strong>Obiettivo:</strong> Mastery equilibrio famiglia-business<br>
+                            • Continuous improvement systems<br>
+                            • Moltiplicatore effect su team<br>
+                            • Sostenibilità long-term<br>
+                            • Metriche: Correlation Index 4.2→8.5, ROI 12.6x
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="roi-section">
+                <h2>💰 ROI Famiglia-Business - Analisi Completa</h2>
+                <p style="text-align: center; margin-bottom: 30px; font-size: 1.1em;">Investimento strategico per ottimizzare correlazione famiglia-lavoro con ritorno quantificabile su entrambe le dimensioni</p>
+                
+                <div class="roi-grid">
+                    <div class="roi-item">
+                        <div class="roi-value">€7.500</div>
+                        <div class="roi-label">Investimento Totale<br>Programma Integrato</div>
+                    </div>
+                    <div class="roi-item">
+                        <div class="roi-value">€95.000</div>
+                        <div class="roi-label">Valore Generato 12 Mesi<br>Performance + Equilibrio</div>
+                    </div>
+                    <div class="roi-item">
+                        <div class="roi-value">12.6x</div>
+                        <div class="roi-label">Moltiplicatore ROI<br>Ogni Euro Investito</div>
+                    </div>
+                    <div class="roi-item">
+                        <div class="roi-value">+167%</div>
+                        <div class="roi-label">Incremento Soddisfazione<br>Familiare (3→8/10)</div>
+                    </div>
+                    <div class="roi-item">
+                        <div class="roi-value">-75%</div>
+                        <div class="roi-label">Riduzione Transfer Stress<br>Casa → Lavoro</div>
+                    </div>
+                    <div class="roi-item">
+                        <div class="roi-value">90 giorni</div>
+                        <div class="roi-label">Break-even Point<br>Primi Risultati Sostenibili</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="action-items">
+                <h2>🚀 Piano Azione Famiglia-Business - Roadmap Integrata</h2>
+                
+                <div class="action-item priority-critical">
+                    <h4>🔥 CRITICO: Protocollo Separazione Stress Famiglia-Lavoro</h4>
+                    <p><strong>Situazione Attuale:</strong> Giuseppe trasferisce 75% dello stress familiare sul lavoro, compromettendo decisioni strategiche per 3 giorni post-conflitto. <strong>Impatto Finanziario:</strong> -€45.000/anno in performance perduta. <strong>Soluzione:</strong> Tecniche compartimentalizzazione emotiva, rituali transizione casa-ufficio, recovery protocols.</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 10%"></div>
+                    </div>
+                    <small><strong>ROI:</strong> +€45K performance recovery | <strong>Timeline:</strong> 0-30 giorni | <strong>Investimento:</strong> €2.500</small>
+                </div>
+                
+                <div class="action-item priority-high">
+                    <h4>🔴 PRIORITÀ 1: Sistema Qualità Tempo Famiglia</h4>
+                    <p><strong>Gap Identificato:</strong> Soddisfazione familiare 3/10, solo 0-1 cene/settimana con figlio. <strong>Correlazione Business:</strong> Ogni +1 punto soddisfazione famiglia = +8% performance lavorativa. <strong>Strategia:</strong> Quality time structured, emotional presence training, conflict resolution per divorziati.</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 15%"></div>
+                    </div>
+                    <small><strong>ROI:</strong> +€35K da stabilità emotiva | <strong>Timeline:</strong> 15-60 giorni | <strong>Investimento:</strong> €2.000</small>
+                </div>
+                
+                <div class="action-item priority-high">
+                    <h4>🟡 PRIORITÀ 2: Energy Management Optimization</h4>
+                    <p><strong>Opportunità:</strong> Con famiglia equilibrata, energy level 8/10 vs attuale 4/10. <strong>Business Impact:</strong> +60% energia mattutina = +35% produttività prime 4 ore. <strong>Metodo:</strong> Routine serali famiglia, energy recovery techniques, weekend recharge protocols.</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 25%"></div>
+                    </div>
+                    <small><strong>ROI:</strong> +€25K da produttività aumentata | <strong>Timeline:</strong> 30-90 giorni | <strong>Investimento:</strong> €1.500</small>
+                </div>
+                
+                <div class="action-item priority-medium">
+                    <h4>🟢 PRIORITÀ 3: Leadership Enhancement tramite Equilibrio</h4>
+                    <p><strong>Moltiplicatore Effect:</strong> Giuseppe equilibrato = +40% empatia team + 25% decision quality. <strong>Impact Territorio:</strong> Team più motivato e autonomo, performance collettiva +20%. <strong>Programma:</strong> Family-informed leadership style, emotional intelligence, sustainable management practices.</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 30%"></div>
+                    </div>
+                    <small><strong>ROI:</strong> +€30K da team optimization | <strong>Timeline:</strong> 60-180 giorni | <strong>Investimento:</strong> €1.500</small>
+                </div>
+            </div>
+            
+            <div class="contact-section">
+                <h3>🤝 Implementazione Programma Famiglia-Business</h3>
+                <p>Specializzazione unica: l'unico coaching che integra equilibrio familiare con performance business per risultati sostenibili a 360°</p>
+                
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h4>📞 Assessment Famiglia-Business</h4>
+                        <p>Analisi completa correlazioni specifiche del tuo caso</p>
+                        <p><strong>60 minuti - Disponibile entro 24h</strong></p>
+                    </div>
+                    <div class="contact-card">
+                        <h4>🏠 Family Integration Plan</h4>
+                        <p>Roadmap personalizzata per equilibrio sostenibile</p>
+                        <p><strong>Include support strategico famiglia</strong></p>
+                    </div>
+                    <div class="contact-card">
+                        <h4>📈 Business Performance Boost</h4>
+                        <p>Risultati quantificabili in 30-90 giorni</p>
+                        <p><strong>Garanzia ROI o rimborso 100%</strong></p>
+                    </div>
+                </div>
+                
+                <div class="contact-details">
+                    <h4>📧 Contatto Prioritario - Giuseppe Sanfilippo</h4>
+                    <p><strong>Email:</strong> sanfilippo.giuseppe01@gmail.com</p>
+                    <p><strong>Telefono:</strong> +39 335 101 3368</p>
+                    <p><strong>Miglior Orario:</strong> Lunedì-Venerdì 09:00-18:00</p>
+                    <p><strong>Situazione Familiare:</strong> Divorziato/Separato, figlio 11-20 anni</p>
+                    <p><strong>Pain Point Primario:</strong> Stress familiare impatta business (-€45K/anno)</p>
+                    <p><strong>Opportunità Unica:</strong> Correlation Index 4.2/10 → Target 8.5/10 = +€95K valore</p>
+                    <p><strong>Best Approach:</strong> Focus equilibrio famiglia-lavoro per performance sostenibile</p>
+                    <p><strong>Investment Ready:</strong> Budget €5K-€10K confermato, timeline 6 mesi</p>
+                    <p><strong>Urgenza Intervento:</strong> Situazione critica richiede azione nei prossimi 30 giorni</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Grafico Correlazione Famiglia-Business (Line Chart)
+        const ctx1 = document.getElementById('familyBusinessChart').getContext('2d');
+        new Chart(ctx1, {
+            type: 'line',
+            data: {
+                labels: ['Lun', 'Mar', 'Mer', 'Gio', 'Ven', 'Sab', 'Dom'],
+                datasets: [{
+                    label: 'Performance Business (%)',
+                    data: [60, 50, 30, 30, 40, 70, 80],
+                    borderColor: '#dc2626',
+                    backgroundColor: 'rgba(220, 38, 38, 0.1)',
+                    tension: 0.4,
+                    borderWidth: 3,
+                    pointRadius: 6,
+                    pointHoverRadius: 8
+                }, {
+                    label: 'Soddisfazione Famiglia (%)',
+                    data: [40, 30, 20, 20, 30, 60, 70],
+                    borderColor: '#7c3aed',
+                    backgroundColor: 'rgba(124, 58, 237, 0.1)',
+                    tension: 0.4,
+                    borderWidth: 3,
+                    pointRadius: 6,
+                    pointHoverRadius: 8
+                }, {
+                    label: 'Target Equilibrato',
+                    data: [80, 80, 80, 80, 80, 80, 80],
+                    borderColor: '#059669',
+                    backgroundColor: 'rgba(5, 150, 105, 0.05)',
+                    borderDash: [5, 5],
+                    borderWidth: 2,
+                    pointRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: {
+                    intersect: false,
+                    mode: 'index'
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        title: {
+                            display: true,
+                            text: 'Livello Soddisfazione/Performance (%)',
+                            font: { size: 12, weight: 'bold' }
+                        },
+                        ticks: {
+                            callback: function(value) {
+                                return value + '%';
+                            }
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Giorni della Settimana',
+                            font: { size: 12, weight: 'bold' }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            font: { size: 11 },
+                            padding: 15,
+                            usePointStyle: true
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        titleColor: 'white',
+                        bodyColor: 'white',
+                        borderColor: '#0ea5e9',
+                        borderWidth: 1
+                    }
+                }
+            }
+        });
+
+        // Radar Chart Work-Life Balance
+        const ctx2 = document.getElementById('workLifeRadarChart').getContext('2d');
+        new Chart(ctx2, {
+            type: 'radar',
+            data: {
+                labels: [
+                    'Tempo\nFamiglia', 
+                    'Presenza\nEmotiva', 
+                    'Supporto\nFamiliare', 
+                    'Energy\nLevel', 
+                    'Stress\nManagement', 
+                    'Leadership\nStyle'
+                ],
+                datasets: [{
+                    label: 'Situazione Attuale (Giuseppe)',
+                    data: [3, 4, 2, 4, 2, 5],
+                    borderColor: '#dc2626',
+                    backgroundColor: 'rgba(220, 38, 38, 0.15)',
+                    pointBackgroundColor: '#dc2626',
+                    pointBorderColor: '#ffffff',
+                    pointBorderWidth: 3,
+                    pointRadius: 6,
+                    borderWidth: 3
+                }, {
+                    label: 'Target Equilibrato (6 mesi)',
+                    data: [8, 8, 7, 8, 8, 8],
+                    borderColor: '#059669',
+                    backgroundColor: 'rgba(5, 150, 105, 0.1)',
+                    pointBackgroundColor: '#059669',
+                    pointBorderColor: '#ffffff',
+                    pointBorderWidth: 2,
+                    pointRadius: 5,
+                    borderDash: [5, 5],
+                    borderWidth: 2
+                }, {
+                    label: 'Benchmark Manager Top 25%',
+                    data: [7, 7, 8, 7, 8, 9],
+                    borderColor: '#0ea5e9',
+                    backgroundColor: 'rgba(14, 165, 233, 0.05)',
+                    pointBackgroundColor: '#0ea5e9',
+                    pointBorderColor: '#ffffff',
+                    pointBorderWidth: 2,
+                    pointRadius: 4,
+                    borderDash: [2, 2],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: {
+                    intersect: false,
+                },
+                scales: {
+                    r: {
+                        min: 0,
+                        max: 10,
+                        ticks: {
+                            stepSize: 2,
+                            font: { size: 10 },
+                            color: '#475569',
+                            backdropColor: 'transparent'
+                        },
+                        grid: { 
+                            color: 'rgba(0,0,0,0.1)',
+                            lineWidth: 1
+                        },
+                        angleLines: { 
+                            color: 'rgba(0,0,0,0.1)',
+                            lineWidth: 1
+                        },
+                        pointLabels: {
+                            font: { size: 10, weight: 'bold' },
+                            color: '#0f172a'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { 
+                            font: { size: 10 },
+                            padding: 15,
+                            usePointStyle: true
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        titleColor: 'white',
+                        bodyColor: 'white',
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': ' + context.formattedValue + '/10';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Timeline ROI Chart (Bar Chart con crescita progressiva)
+        const ctx3 = document.getElementById('roiTimelineChart').getContext('2d');
+        new Chart(ctx3, {
+            type: 'bar',
+            data: {
+                labels: ['Mese 1', 'Mese 2', 'Mese 3', 'Mese 4', 'Mese 5', 'Mese 6'],
+                datasets: [{
+                    label: 'ROI Cumulativo (€)',
+                    data: [5000, 15000, 35000, 55000, 75000, 95000],
+                    backgroundColor: [
+                        'rgba(5, 150, 105, 0.8)',
+                        'rgba(5, 150, 105, 0.85)',
+                        'rgba(5, 150, 105, 0.9)',
+                        'rgba(5, 150, 105, 0.95)',
+                        'rgba(5, 150, 105, 1)',
+                        'rgba(5, 150, 105, 1)'
+                    ],
+                    borderColor: '#059669',
+                    borderWidth: 2,
+                    borderRadius: 8,
+                    borderSkipped: false
+                }, {
+                    label: 'Investimento Cumulativo (€)',
+                    data: [-2500, -5000, -6000, -7000, -7500, -7500],
+                    backgroundColor: [
+                        'rgba(220, 38, 38, 0.8)',
+                        'rgba(220, 38, 38, 0.85)',
+                        'rgba(220, 38, 38, 0.9)',
+                        'rgba(220, 38, 38, 0.95)',
+                        'rgba(220, 38, 38, 1)',
+                        'rgba(220, 38, 38, 1)'
+                    ],
+                    borderColor: '#dc2626',
+                    borderWidth: 2,
+                    borderRadius: 8,
+                    borderSkipped: false
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: {
+                    intersect: false,
+                    mode: 'index'
+                },
+                scales: {
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Valore Finanziario (€)',
+                            font: { size: 12, weight: 'bold' }
+                        },
+                        ticks: {
+                            callback: function(value) {
+                                return '€' + value.toLocaleString();
+                            }
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Timeline Implementazione',
+                            font: { size: 12, weight: 'bold' }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            font: { size: 11 },
+                            padding: 15,
+                            usePointStyle: true
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        titleColor: 'white',
+                        bodyColor: 'white',
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': €' + context.parsed.y.toLocaleString();
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Animazioni e interazioni avanzate
+        window.addEventListener('load', function() {
+            // Animate progress bars con delay progressivo
+            setTimeout(() => {
+                const progressBars = document.querySelectorAll('.progress-fill');
+                progressBars.forEach((bar, index) => {
+                    const width = bar.style.width;
+                    bar.style.width = '0%';
+                    setTimeout(() => {
+                        bar.style.width = width;
+                    }, index * 300 + 500);
+                });
+            }, 1000);
+
+            // Intersection Observer per animazioni scroll-triggered
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            // Applica animazioni a tutti gli elementi
+            document.querySelectorAll('.metric-card, .family-metric, .cost-item, .benchmark-item, .roi-item').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'all 0.8s ease';
+                observer.observe(el);
+            });
+        });
+
+        // Hover effects sofisticati
+        document.querySelectorAll('.metric-card, .family-metric, .cost-item').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.03)';
+                this.style.boxShadow = '0 25px 50px rgba(0, 0, 0, 0.2)';
+                this.style.zIndex = '10';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+                this.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.1)';
+                this.style.zIndex = '1';
+            });
+        });
+
+        // Update timestamp real-time
+        function updateTimestamp() {
+            const now = new Date();
+            const options = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric', 
+                hour: '2-digit', 
+                minute: '2-digit',
+                timeZone: 'Europe/Rome'
+            };
+            const timestamp = document.querySelector('.timestamp');
+            if (timestamp) {
+                timestamp.innerHTML = `Generato: ${now.toLocaleDateString('it-IT', options)} | Aggiornato: Real-time`;
+            }
+        }
+
+        // Aggiorna timestamp ogni 5 minuti
+        updateTimestamp();
+        setInterval(updateTimestamp, 300000);
+
+        // Parallax effect leggero per header
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.header::before');
+            if (scrolled < window.innerHeight) {
+                const speed = scrolled * 0.3;
+                if (parallax) {
+                    parallax.style.transform = `translateY(${speed}px) rotate(${speed * 0.1}deg)`;
+                }
+            }
+        });
+
+        // Console log per tracking (preparazione analytics)
+        document.querySelectorAll('.contact-card, .action-item, .metric-card, .roi-item').forEach(element => {
+            element.addEventListener('click', function() {
+                const elementType = this.className.split(' ')[0];
+                const elementText = this.querySelector('h4, .metric-label, .roi-label')?.textContent || 'Unknown';
+                console.log(`Interaction: ${elementType} - ${elementText.substring(0, 50)}`);
+                
+                // Preparazione per future integrazioni analytics
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'dashboard_interaction', {
+                        'element_type': elementType,
+                        'element_content': elementText.substring(0, 50),
+                        'lead_name': 'Giuseppe Sanfilippo'
+                    });
+                }
+            });
+        });
+
+        // Smooth scroll per navigation interna (se implementata)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Auto-focus su elementi critici quando visibili
+        const criticalElements = document.querySelectorAll('.priority-critical, .risk-high');
+        const criticalObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.boxShadow = '0 0 30px rgba(220, 38, 38, 0.3)';
+                    setTimeout(() => {
+                        entry.target.style.boxShadow = '';
+                    }, 2000);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        criticalElements.forEach(el => criticalObserver.observe(el));
+    </script>
+</body>
+</html><!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -237,48 +921,6 @@
             line-height: 1.3;
         }
         
-        .correlation-section {
-            background: linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #b45309 100%);
-            color: white;
-            padding: 35px;
-            border-radius: 20px;
-            margin-bottom: 40px;
-            box-shadow: 0 20px 40px rgba(245, 158, 11, 0.3);
-        }
-        
-        .correlation-section h2 {
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            font-weight: 700;
-            text-align: center;
-        }
-        
-        .correlation-highlights {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 25px;
-        }
-        
-        .correlation-item {
-            background: rgba(255, 255, 255, 0.15);
-            padding: 20px;
-            border-radius: 15px;
-            backdrop-filter: blur(15px);
-        }
-        
-        .correlation-item h4 {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-        
-        .correlation-item p {
-            font-size: 1em;
-            line-height: 1.4;
-            opacity: 0.95;
-        }
-        
         .metrics-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -349,6 +991,52 @@
             word-wrap: break-word;
         }
         
+        .benchmark-section {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            border: 1px solid #0ea5e9;
+        }
+        
+        .benchmark-section h2 {
+            font-size: 1.6em;
+            margin-bottom: 25px;
+            color: #0c4a6e;
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        .benchmark-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+        
+        .benchmark-item {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .benchmark-value {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #0c4a6e;
+            margin-bottom: 10px;
+            word-wrap: break-word;
+        }
+        
+        .benchmark-label {
+            font-size: 1em;
+            color: #475569;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+        
         .charts-section {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -362,7 +1050,7 @@
             border-radius: 20px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
             border: 1px solid rgba(0, 0, 0, 0.05);
-            height: 400px;
+            height: 450px;
             display: flex;
             flex-direction: column;
         }
@@ -379,7 +1067,7 @@
         .chart-wrapper {
             flex: 1;
             position: relative;
-            min-height: 300px;
+            min-height: 350px;
         }
         
         .chart-wrapper canvas {
@@ -432,6 +1120,63 @@
             font-size: 0.9em;
             opacity: 0.9;
             line-height: 1.3;
+        }
+        
+        .timeline-section {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            border: 1px solid #f59e0b;
+        }
+        
+        .timeline-section h2 {
+            font-size: 1.6em;
+            margin-bottom: 25px;
+            color: #92400e;
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+        
+        .timeline-item {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #f59e0b, #d97706);
+        }
+        
+        .timeline-phase {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #92400e;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        
+        .timeline-description {
+            color: #475569;
+            line-height: 1.5;
+            font-size: 0.95em;
+            word-wrap: break-word;
+            hyphens: auto;
         }
         
         .roi-section {
@@ -616,12 +1361,38 @@
             backdrop-filter: blur(10px);
         }
         
+        .contact-card h4 {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        .contact-card p {
+            margin-bottom: 10px;
+            font-size: 1em;
+            line-height: 1.4;
+            word-wrap: break-word;
+        }
+        
         .contact-details {
             margin-top: 30px;
             padding: 25px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
             backdrop-filter: blur(10px);
+        }
+        
+        .contact-details h4 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            font-weight: 700;
+        }
+        
+        .contact-details p {
+            margin-bottom: 8px;
+            font-size: 1em;
+            line-height: 1.4;
         }
         
         /* RESPONSIVE DESIGN */
@@ -647,6 +1418,48 @@
             .content {
                 padding: 25px 15px;
             }
+            
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .benchmark-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .roi-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .timeline {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .summary-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .benchmark-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .roi-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .family-metrics-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cost-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -656,7 +1469,7 @@
             <div class="timestamp">
                 Generato: 5 Luglio 2025 | Aggiornato: Real-time
             </div>
-            <h1>Analisi Famiglia-Business</h1>
+            <h1>Analisi Strategica Famiglia-Business</h1>
             <p class="subtitle">Giuseppe Sanfilippo - Impact Relazioni Familiari su Performance</p>
             
             <div class="lead-info">
@@ -664,7 +1477,7 @@
                     <h3>Profilo Lead</h3>
                     <p>Giuseppe Sanfilippo</p>
                     <p>Area Manager - B2B</p>
-                    <p>Divorziato, 1 figlio</p>
+                    <p>+39 335 101 3368</p>
                 </div>
                 <div class="info-card">
                     <h3>Territorio Business</h3>
@@ -673,13 +1486,13 @@
                 </div>
                 <div class="info-card">
                     <h3>Situazione Familiare</h3>
+                    <p>Divorziato, 1 figlio</p>
                     <p>Soddisfazione: 3/10</p>
-                    <p>0-1 cene/settimana</p>
                 </div>
                 <div class="info-card">
-                    <h3>Correlazione Index</h3>
+                    <h3>Correlation Index</h3>
                     <p>4.2/10</p>
-                    <p>Alto Potenziale</p>
+                    <p>Alto Potenziale ROI</p>
                 </div>
             </div>
         </div>
@@ -741,68 +1554,7 @@
                 </div>
             </div>
             
-            <div class="correlation-section">
-                <h2>📊 Correlazioni Famiglia-Business Specifiche</h2>
-                
-                <div class="correlation-highlights">
-                    <div class="correlation-item">
-                        <h4>🎯 Leadership Style Impact</h4>
-                        <p>Quando equilibrato famiglia: +40% empatia con team, +25% decision quality, +30% problem-solving creativo</p>
-                    </div>
-                    <div class="correlation-item">
-                        <h4>⚡ Energy & Productivity</h4>
-                        <p>Serata famiglia positiva → +60% energia mattino successivo → +35% produttività prime 4 ore lavorative</p>
-                    </div>
-                    <div class="correlation-item">
-                        <h4>🧠 Stress & Decision Making</h4>
-                        <p>Conflitto familiare → stress cognitivo +80% → qualità decisioni strategiche -45% per 72 ore</p>
-                    </div>
-                    <div class="correlation-item">
-                        <h4>💡 Creatività & Innovation</h4>
-                        <p>Equilibrio 60% lavoro/40% famiglia = sweet spot per +65% soluzioni creative problemi business</p>
-                    </div>
-                </div>
-            </div>
-            
             <div class="financial-impact">
                 <h2>💰 Costo Finanziario Disequilibrio Famiglia-Lavoro</h2>
                 
-                <div class="cost-grid">
-                    <div class="cost-item">
-                        <div class="cost-value">€15.000</div>
-                        <div class="cost-label">Perdita Deal per Decisioni<br>sotto Stress Familiare</div>
-                    </div>
-                    <div class="cost-item">
-                        <div class="cost-value">€18.000</div>
-                        <div class="cost-label">Calo Produttività Team<br>Leadership Compromessa</div>
-                    </div>
-                    <div class="cost-item">
-                        <div class="cost-value">€8.000</div>
-                        <div class="cost-label">Giorni Malattia Stress<br>+ Burnout Prevention</div>
-                    </div>
-                    <div class="cost-item">
-                        <div class="cost-value">€4.000</div>
-                        <div class="cost-label">Opportunità Mancate<br>Focus Ridotto</div>
-                    </div>
-                    <div class="cost-item">
-                        <div class="cost-value">€45.000</div>
-                        <div class="cost-label"><strong>TOTALE ANNUALE</strong><br>Costo Disequilibrio</div>
-                    </div>
-                    <div class="cost-item">
-                        <div class="cost-value">€95.000</div>
-                        <div class="cost-label"><strong>UPSIDE POTENTIAL</strong><br>Con Equilibrio Ottimale</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="metrics-grid">
-                <div class="metric-card">
-                    <div class="metric-value">4.2/10</div>
-                    <div class="metric-label">Famiglia-Business Correlation Index</div>
-                    <div class="metric-trend">
-                        <span class="risk-indicator risk-high">Impatto Significativo su Business</span>
-                        <span class="trend-negative">⚠️ Opportunità Miglioramento +140%</span>
-                    </div>
-                </div>
-                
-                <div class="metric-card">
+                <div
